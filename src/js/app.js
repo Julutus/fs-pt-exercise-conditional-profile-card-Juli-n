@@ -33,13 +33,13 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>"${variables.name ? variables.name : "Your name"} ${
-    variables.lastName ? variables.lastName : "Your last name"
-  }"</h1>
-          <h2>"${variables.role ? variables.role : "Web developer"}"</h2>
-          <h3>"${variables.city ? variables.city : "Miami"} ${
+          <h1>${variables.name ? variables.name : "Julián"} ${
+    variables.lastName ? variables.lastName : "Martínez"
+  }</h1>
+          <h2>${variables.role ? variables.role : "Web developer"}</h2>
+          <h3>${variables.city ? variables.city : "Miami"} ${
     variables.country ? variables.country : "USA"
-  }"</h3>
+  }</h3>
           <ul class="${
             variables.socialMediaPosition
               ? variables.socialMediaPosition
@@ -51,19 +51,13 @@ function render(variables = {}) {
                 : "4geeksacademyES?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
             }"><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/${
-              variables.github
-                ? variables.github
-                : "4geeksacademy"
+              variables.github ? variables.github : "4geeksacademy"
             }"><i class="fab fa-github"></i></a></li>
             <li><a href="https://linkedin.com/${
-              variables.linkedin
-                ? variables.linkedin
-                : "school/4geeksacademyes"
+              variables.linkedin ? variables.linkedin : "school/4geeksacademyes"
             }"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="https://instagram.com/${
-              variables.instagram
-                ? variables.instagram
-                : "4geeksacademyes"
+              variables.instagram ? variables.instagram : "4geeksacademyes"
             }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
